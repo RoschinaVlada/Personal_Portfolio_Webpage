@@ -1,11 +1,66 @@
-@media (max-width: 800px) {
- nav{
-    display: none;
-  }
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
+
+nav {
+  background-color: #8B0000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
 }
-#navbar{
-  top: 50px ;
-  position: fixed;
-  width: 100%;
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+ }
+
+header {
+  background-image: url(https://i0.wp.com/levashove.ru/wp-content/uploads/2018/11/dark-wallpapers.jpg);
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  background-position: center center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  flex-direction: column;
+}
+
+header h1{
+  font-size: 50px;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+
+header p{
+  font-size: 30px;
+  margin: 0;
+}
+
+header::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+header * {
+position: relative;
+z-index: 1;
+}
+
+footer {
+  background-color: #8B0000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
