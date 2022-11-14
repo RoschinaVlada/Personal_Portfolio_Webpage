@@ -61,10 +61,15 @@ z-index: 1;
 section {
   text-align: center;
   color: #fff;
+  padding: 20px;
 }
 
 section p {
   margin-top: 0;
+}
+
+section h2 {
+  margin-bottom: 0;
 }
 
 .social {
