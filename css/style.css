@@ -10,6 +10,11 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 17px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 nav a {
@@ -18,8 +23,10 @@ nav a {
   text-decoration: none;
  }
 
+nav a:hover {
+  text-decoration: underline;
+}
 
- 
 header {
   background-image: url(https://i0.wp.com/levashove.ru/wp-content/uploads/2018/11/dark-wallpapers.jpg);
   background-size: cover;
@@ -90,8 +97,25 @@ section h2 {
   max-width: 100%;
 }
 
-.code, p {
+.project p {
+  font-size: 20px;
   color: #fff;
+  margin-top: 20px;
+}
+.project a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto 0;
 }
 
 .social {
@@ -104,6 +128,7 @@ section h2 {
   justify-content: center;
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 .social-links a {
@@ -115,6 +140,6 @@ section h2 {
 footer {
   background-color: #8B0000;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
